@@ -11,7 +11,7 @@ module SharingCounter
       end
 
       def parse(page)
-        JSON.parse(page)['share'][@measurement].to_i
+        JSON.parse(page)['share']['share_count'].to_i
       end
 
     end
